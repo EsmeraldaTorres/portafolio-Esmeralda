@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*barra de navegación*/
+.nav-bar {
+    height: 50px;
+    width: 100%;
+    position:fixed;
+    z-index: 9;
+    background: #f4eff7f2;
+    padding: 20px;
+    border-bottom: solid 2px #b1670cdb;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.myFirm {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    color: black;
+    height: 20px;
+}
+
+.menu a:hover {
+    background-color: #eadbdb;
+}
+
+.content-g {
+    margin-top: 50px;
+}
+
+/* Section1 */
+.section1 {
+    padding-top: 60px;
+    background-image: url('https://images.pexels.com/photos/1420701/pexels-photo-1420701.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+}
+
+.main-Title {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 20px;
+}
+
+.text-1 {
+    font-family: 'Cabin', sans-serif;
+    font-family: 2rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.main-Img{
+    width: 50%
+
+}
+.center-img {    
+    justify-content: center;
+}
+
+.text-2 {
+    font-family: 'Cabin', sans-serif;
+    font-family: 2rem;    
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    padding: 10px;
+}
+
+
+/* Section2 */
+.section2 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-image: url('https://images.pexels.com/photos/3815759/pexels-photo-3815759.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: large;
+    text-align: center;
+}
+
+.card-edu {
+    background-color: rgba(250, 235, 215, 0.288);
+    border: 1px solid grey;
+    border-radius: .25rem;
+    margin: 10px;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgb(23 17 17 / 43%);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.card-body {
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.text-muted {
+    color: #717477;
+    font-weight: bold;
+}
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: rgb(23 17 17 / 43%);
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.progress {
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .75rem;
+    background-color: #b8a6af;
+    border-radius: .25rem;
+    margin-top: 10px;
+}
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #2d2b2b;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #9e1a2fcf;
+    transition: width .6s ease;
+}
+/* section3 */
+.section3 {
+    padding-top: 40px;
+    background-color: #b3b1a159;
+}
+
+h3 {
+    color: rgb(12, 12, 12);
+    font-size: large;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    transform: scale (.6);
+    transition: 1s;
+    margin: 10px 10px 0px 10px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: all 1s;
+  }
+
+.text-white {
+    color: #fff!important;
+}
+
+.bg-dark {
+    background-color: #343a40!important;
+}
+
+.card-img {
+    width:100%;
+    flex-shrink: 0;
+    border-bottom-right-radius: calc(.25rem - 1px);
+    border-bottom-left-radius: calc(.25rem - 1px);
+   border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.25rem;
+    border-radius: calc(.25rem - 1px);
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* Responsive */
+@media (max-width: 450px)   {
+    .nav-bar {
+        height: 110px;
+        padding: 10px;
+        font-size: smaller;
+    }
+
+    .myFirm {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+    
+    .menu a {
+        font-family: Tahoma, sans-serif;
+        margin-bottom: 5px;
+        font-size: 1rem;
+        display: block;
+    }
+
+    .content {
+        margin-top: 110px;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+        padding: 1rem;
+    }
+
+}
+
+@media(min-width: 768px){
+    .row-flex { 
+        display: flex;
+        justify-content: center;
+    } 
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 2rem;
+        margin-left: 90px;
+    }
+
+    .text-1 {
+        width:80%;
+        text-align: right;
+    }
+
+    .col-md-6 {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    .col-md-12 {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .text-2 {
+        font-size: 1.2rem;    
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        
+    }
+}
+
+@media(min-width: 1020px) {
+    .col-lg-6 {
+        width: 50%;
+        padding: 1rem;
+    }
+    h1 {
+        width:45%;
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 10px;
+        font-family: 'Cabin', sans-serif;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    h2, h3 {
+        font-size: 1.8rem;
+    }
+    
+    .text-1 {
+        width:85%;
+        font-size: 1.5rem;
+        text-align: right;
+        padding:0px;
+    }
+
+    .text-2 {
+        font-family: 'Cabin', sans-serif;
+        font-size: 1.8rem;    
+        align-items: center;
+        justify-content: center;
+        padding: 150px;
+    }
+}
+
